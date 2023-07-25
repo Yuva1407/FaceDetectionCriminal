@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="registerWindow">
+   <property name="maximumSize">
+    <size>
+     <width>1000</width>
+     <height>800</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="MainLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetMaximumSize</enum>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item alignment="Qt::AlignTop">
+     <widget class="QLabel" name="title">
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Criminal Database Management System</string>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="regWidget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QWidget" name="verticalWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="text">
+             <string>Register Page</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="regImg">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../.resource/regImg.svg</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QWidget" name="regFields" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>20</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>30</number>
+          </property>
+          <item row="4" column="2">
+           <widget class="QLineEdit" name="state">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="passwordLabel">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Password</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLineEdit" name="dist">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="dobLabel">
+            <property name="text">
+             <string>Date Of Birth</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="genLabel">
+            <property name="text">
+             <string>Gender</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QLineEdit" name="branch">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="repassLabel">
+            <property name="text">
+             <string>Re-Password</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLineEdit" name="name">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="distLabel">
+            <property name="text">
+             <string>District</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="emailLabel">
+            <property name="text">
+             <string>Email ID</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QDateEdit" name="dob">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="dateTime">
+             <datetime>
+              <hour>0</hour>
+              <minute>0</minute>
+              <second>0</second>
+              <year>2000</year>
+              <month>1</month>
+              <day>1</day>
+             </datetime>
+            </property>
+            <property name="minimumDate">
+             <date>
+              <year>1900</year>
+              <month>1</month>
+              <day>1</day>
+             </date>
+            </property>
+            <property name="currentSection">
+             <enum>QDateTimeEdit::DaySection</enum>
+            </property>
+            <property name="displayFormat">
+             <string>dd/MM/yyyy</string>
+            </property>
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLineEdit" name="policeId">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="stateLabel">
+            <property name="text">
+             <string>State</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="branchLabel">
+            <property name="text">
+             <string>Branch</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLineEdit" name="rank">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="2" alignment="Qt::AlignLeft">
+           <widget class="QPushButton" name="regBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Register</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="2">
+           <widget class="QLineEdit" name="repassword">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="2">
+           <widget class="QLineEdit" name="emailId">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="2" alignment="Qt::AlignLeft">
+           <widget class="QPushButton" name="backBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Back</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="nameLabel">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="rankLabel">
+            <property name="text">
+             <string>Rank</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="2">
+           <widget class="QLineEdit" name="password">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="phnoLabel">
+            <property name="text">
+             <string>Phone Number</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="policeIdLabel">
+            <property name="text">
+             <string>Police ID</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="2">
+           <widget class="QLineEdit" name="phNo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="2">
+           <widget class="QWidget" name="widget" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>1</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>35</height>
+             </size>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QCheckBox" name="maleBtn">
+               <property name="text">
+                <string>Male</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="femaleBtn">
+               <property name="text">
+                <string>Female</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="8" column="3">
+           <widget class="QPushButton" name="eyeBtn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../.resource/eyeOpen.svg</normaloff>../.resource/eyeOpen.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>name</tabstop>
+  <tabstop>rank</tabstop>
+  <tabstop>policeId</tabstop>
+  <tabstop>dob</tabstop>
+  <tabstop>state</tabstop>
+  <tabstop>dist</tabstop>
+  <tabstop>branch</tabstop>
+  <tabstop>maleBtn</tabstop>
+  <tabstop>femaleBtn</tabstop>
+  <tabstop>password</tabstop>
+  <tabstop>eyeBtn</tabstop>
+  <tabstop>repassword</tabstop>
+  <tabstop>phNo</tabstop>
+  <tabstop>emailId</tabstop>
+  <tabstop>regBtn</tabstop>
+  <tabstop>backBtn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
